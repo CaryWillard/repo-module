@@ -23,7 +23,7 @@ locals {
 }
 
 module "apps" {
-  source   = "./app"
+  source   = "../app"
   for_each = zipmap(local.spec.apps[*].name, local.spec.apps[*])
   app_spec = each.value
 

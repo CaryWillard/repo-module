@@ -1,5 +1,5 @@
 module "test-repo" {
-  source = "./repo"
+  source = "../modules/repo"
 
   repo_name = "test-repo"
 }

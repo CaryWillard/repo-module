@@ -11,7 +11,7 @@ variable "branch" {
 variable "parameters" {
   type = object({
     csproj_path   = string
-    ports = list(number)
+    ports         = list(number)
     build_image   = string
     runtime_image = string
   })

@@ -3,6 +3,11 @@ variable "repo_name" {
 }
 
 variable "default_branch" {
-  type = string
+  type    = string
   default = "main"
+}
+
+variable "config" {
+  type    = string
+  default = null
 }
